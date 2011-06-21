@@ -1,0 +1,78 @@
+PACQ - things to do:
+
+Construction:
+
+  Fix problem with context sensitive hot-keys (updating gadgets)
+  Underline hot-letter for gadget key-activation
+  Play maze from Construction set
+  Option to load game file and index forward and backward through mazes
+  Automatic-toggling of create gadget
+  Option to change colors from construction set
+  Print XY position
+  Allow connection of non-tunnel-edge to tunnel-edge
+  auto-locate problems (IE looks different that what it is) (? hard ?)
+  Move horizontal edge up/down & vert edge left/right (? hard ?)
+  Mirror option for construction (? hard ?)
+  Draw solid lines on all edges, then erase where dots should be
+   ^ This won't work because dots are read for feedback...
+--------------------------------------------------------------------------
+* Fix problem with confusion of filenames when saving - make program wise
+* Fix problem with menu getting pushed too far down
+* Don't allow an edge to be dragged off the screen
+* Automatic resizing of screen
+* Add RxOffset and RyOffset to x/y values
+* Do not allow add vertex when starting outside of min/max x/y
+* Superbitmap Construction
+* Add delete/backspace to delete an edge
+* Fix Ghost-box crash
+* Make default maze and vars if no maze has been loaded
+
+--------------------------------------------------------------------------
+Game:
+
+  Fix problem with white pacman at end
+  Make a program to convert ASCII -> binary images for sprites
+  Animated ghosts
+  Leave PAC on for a while & blink maze when finished
+  Implement above as two separate tasks
+  Add high score list to the title screen
+  Add gadgets for play, about, construct, and quit
+  Add timer support for score per minute & overall time
+  Make "About" gadget in construction and allows credits in mazes
+  Modify to eliminate "need" for var file by implmenting commands in
+    game file.  Suggested commands:
+    "loadmaze mazename {0/left/right/up/down}"
+    "loadvars varname"
+    "set <varname> = parameter_value"
+    "playgame"
+    "label:"
+    "goto label"
+  Push button for stair-stepping automatic movement on corners
+--------------------------------------------------------------------------
+* Make eyes same speed in tunnels
+* Allow ghosts follow pacman in tunnels (without 'heading him off')
+* Make keyboard remember all keys down but only signal last button pressed
+* Fix problem where ghosts go in circles when in random mode
+* Make a program to convert binary -> ASCII images for sprites
+* Prevent pacman from eating outside of max/min x/y
+* Fix problem in custom5 maze where no_ghost isn't working.
+* Change the speed of the background noise as numdots--
+* Fix bug where orange ghost gets stuck in ghost_1way
+* Allow keyboard control
+* Fix problem where ghosts go fast in box when DeEnergizing
+* Erase sprite pointer when playing game
+
+--------------------------------------------------------------------------
+Misc:
+  Finish readme file
+  Have intro screen/animation:
+    Maybe use MsPacman type "starring blah blah"
+    Maybe use special blitter stuff
+    Maybe use 3-d something or another
+--------------------------------------------------------------------------
+* Fix crash problem
+* Fix screen title bug
+
+Readme file:
+
+"Real programmers don't have to touch their joysticks"
